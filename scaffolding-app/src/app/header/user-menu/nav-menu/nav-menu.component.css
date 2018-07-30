@@ -1,0 +1,19 @@
+/* .this {
+  display: none;
+} */
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 250px;
+  height: 0;
+  border-right: 2px solid black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.menu.open {
+  height: 100vh;
+}

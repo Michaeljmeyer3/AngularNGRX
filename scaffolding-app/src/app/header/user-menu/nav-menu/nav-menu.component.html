@@ -1,0 +1,12 @@
+<div class="menu"
+[ngClass]="{open: showMenu}"
+>
+  <nav>
+    <div 
+      *ngFor="let link of links">
+      <!-- <a href= '{{link.link}}' alt="{{link.description}}"> {{link.name}}</a> -->
+      {{link}}
+    </div>
+  </nav>
+
+</div>

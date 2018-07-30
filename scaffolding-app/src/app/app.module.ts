@@ -10,6 +10,12 @@ import { UserMenuComponent } from './header/user-menu/user-menu.component';
 import { GroupSwitchComponent } from './header/group-switch/group-switch.component';
 import { SearchComponent } from './header/search/search.component';
 import { QuickAddComponent } from './header/quick-add/quick-add.component';
+import { LoginScreenComponent } from './login/login-screen/login-screen.component';
+import { KintMainComponent } from './kint-main/kint-main.component';
+import { KintFooterComponent } from './kint-footer/kint-footer.component';
+import { KintHeaderComponent } from './kint-header/kint-header.component';
+import { NavMenuComponent } from './header/user-menu/nav-menu/nav-menu.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +25,12 @@ import { QuickAddComponent } from './header/quick-add/quick-add.component';
     UserMenuComponent,
     GroupSwitchComponent,
     SearchComponent,
-    QuickAddComponent
+    QuickAddComponent,
+    LoginScreenComponent,
+    KintMainComponent,
+    KintFooterComponent,
+    KintHeaderComponent,
+    NavMenuComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
