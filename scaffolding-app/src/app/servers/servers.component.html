@@ -1,0 +1,63 @@
+
+
+<hr> 
+
+<div>
+  <!-- One Way Binding  = ()
+  Binds to an event (click), (onBlur), etc -->
+
+  <input 
+  type="text"
+  class="form-control"
+  (input)='onUpdateServerName($event)'
+>
+
+</div>
+
+<div>
+  <!-- Two Way Binding  = ()
+  Binds to an event (click), (onBlur), etc  -->
+
+  <input 
+    type="text"
+    class="form-control"
+    [(ngModel)] = "serverName">
+</div>
+
+<div 
+  *ngIf="serverCreated; else noServer"> 
+    Server 	&quot;{{serverName}}&quot; was created!
+    <!-- *ngIf - the star means this is a structural directive. Meaning it changes the structure of the element -->
+  </div>
+  <ng-template #noServer>
+    <p> No server has been created.</p>
+  </ng-template>
+<br />
+<button 
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"> 
+  Add Server
+ </button>
+<hr> 
+
+<div>
+  Property Binding = [] 
+  <br />
+  Binds to a property in the controller
+</div>
+
+<div>
+  Event Binding = ()
+  Binds to an event (click), (onBlur), etc
+</div>
+
+
+<app-server 
+  *ngFor="let server of servers; 
+          let i = index">
+
+</app-server>
+
+
+<hr> 
